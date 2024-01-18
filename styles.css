@@ -1,0 +1,140 @@
+:root {
+  --blue: #4c5fd5;
+  --gray: #dadbf1;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Header*/
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+.left-header {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.left-header > h2 {
+  margin: 0 0.4rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.abstract:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.helpCenter:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.right-header {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  margin: 0 0.4rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+.request {
+  padding: 0.5rem 1.1rem;
+}
+.signIn {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+}
+.signIn:hover {
+  color: black;
+  border: 1px solid white;
+  background-color: white;
+  cursor: pointer;
+}
+.request:hover {
+  cursor: pointer;
+}
+.right-header-min {
+  display: none;
+}
+.search-header {
+  display: none;
+  background-color: white;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 0 100px;
+}
+.search-header > input {
+  flex: 1;
+  margin: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--gray);
+  font-size: 1rem;
+}
+.search-header > i {
+  font-size: 28px;
+  font-size: 28px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+  padding: 0.5rem;
+}
+.show {
+  display: flex;
+}
+
+.hidder {
+  display: none;
+}
+/*media responsive page*/
+@media only screen and (max-width: 1199px) {
+  body {
+    background-color: var(--gray);
+  }
+  .right-header {
+    display: none;
+  }
+  .right-header-min {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .right-header-min > i {
+    font-size: 28px;
+    font-size: 28px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+    padding: 0rem 0rem 0rem 1rem;
+  }
+  .bx:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
