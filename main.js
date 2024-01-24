@@ -8,3 +8,12 @@ searchBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   searchHeader.classList.remove("show");
 });
+
+const bottomSignIn = document.querySelector(".bottom-signin");
+const menuID = document.getElementById("menuBtn");
+
+console.log(menuID);
+
+menuID.addEventListener("click", function () {
+  bottomSignIn.classList.toggle("show");
+});
