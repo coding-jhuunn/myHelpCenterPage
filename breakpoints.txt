@@ -1,0 +1,11 @@
+min 768 px
+
+	
+
+	search-bar margin: 0 100px;
+
+
+min 1200px
+
+	right-header display flex
+	right-header-min display flex;

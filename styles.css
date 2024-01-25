@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   height: 100%;
 }
+/*Header*/
 
 /*Header*/
 header {
@@ -74,8 +75,29 @@ button {
 .right-header-min {
   display: none;
 }
+.right-header-min {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.right-header-min > i {
+  font-size: 28px;
+  font-size: 28px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+  padding: 0rem 0rem 0rem 1rem;
+}
+.bx:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .search-header {
   display: none;
+
+  justify-content: center;
   background-color: white;
   height: 88px;
   position: absolute;
@@ -86,8 +108,27 @@ button {
   width: 100%;
   padding: 0 100px;
 }
-.search-header > input {
+.right-header-min {
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.right-header-min > i {
+  font-size: 28px;
+  font-size: 28px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem;
+  padding: 0rem 0rem 0rem 1rem;
+}
+.bx:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.search-header > input {
+  width: 75%;
   margin: 1rem 1rem;
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -95,8 +136,8 @@ button {
   font-size: 1rem;
 }
 .search-header > i {
-  font-size: 28px;
-  font-size: 28px;
+  font-size: 32px;
+
   color: black;
   display: flex;
   justify-content: center;
@@ -140,8 +181,28 @@ button {
   cursor: pointer;
   opacity: 0.8;
 }
-
 /*Header*/
+.top-content {
+  height: 350px;
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-title {
+  font-weight: 500;
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+.top-input {
+  width: 90%;
+  height: 60px;
+  border: 1px solid black;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
 
 .show {
   display: flex;
@@ -152,7 +213,29 @@ button {
 }
 /*media responsive page*/
 
+@media (min-width: 375px) {
+  .left-header {
+    padding-left: 10px;
+  }
+  .right-header-min {
+    padding-right: 10px;
+  }
+  .right-header {
+    display: none;
+  }
+
+  .search-header {
+    padding: 0px;
+  }
+
+  .bottom-signin > h2 {
+    width: 60%;
+  }
+}
 @media (min-width: 640px) {
+  .top-input {
+    width: 80%;
+  }
 }
 @media (min-width: 768px) {
   .left-header {
@@ -162,38 +245,21 @@ button {
     padding-right: 100px;
   }
 }
-@media (min-width: 1024px) {
-}
 
-@media (max-width: 1199px) {
-  body {
-    background-color: var(--gray);
-  }
+@media (min-width: 1024px) {
   .right-header {
+    display: flex;
+  }
+
+  .right-header-min {
     display: none;
   }
-  .right-header-min {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .right-header-min > i {
-    font-size: 28px;
-    font-size: 28px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.2rem;
-    padding: 0rem 0rem 0rem 1rem;
-  }
-  .bx:hover {
-    cursor: pointer;
-    transform: scale(1.2);
+  .top-input {
+    width: 38%;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .left-header {
     padding-left: 125px;
   }
