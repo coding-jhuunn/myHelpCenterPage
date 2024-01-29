@@ -257,8 +257,7 @@ top-input:focus {
 footer {
   background-color: black;
   color: white;
-  display: flex;
-  justify-content: flex-start;
+
   padding: 30px;
 }
 .inner-footer {
@@ -361,10 +360,6 @@ footer {
   .category-img > img {
     width: 80%;
   }
-  footer {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -372,7 +367,9 @@ footer {
     display: flex;
   }
 
-  .right-header-min {
+  .right-header-min,
+  .search-header,
+  .bottom-signin {
     display: none;
   }
 
