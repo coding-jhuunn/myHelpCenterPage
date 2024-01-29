@@ -203,7 +203,97 @@ button {
   padding: 1rem 1rem;
   border-radius: 5px;
 }
+.bottom-content {
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+  margin-bottom: 75px;
+}
+.bottom-content-inner {
+  display: grid;
+  gird-template-columns: 1fr;
+}
+.category-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  padding: 30px 30px;
 
+  max-width: 750px;
+}
+.category-img {
+  display: flex;
+  align-items: flex-start;
+}
+.category-img > img {
+  width: 60%;
+}
+.category-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+  font-size: 24px;
+}
+.category-link {
+  text-decoration: none;
+  color: var(--blue);
+}
+.category-link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 125px 15px 125px 15px;
+}
+.inner-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 25px;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.footer-item-title {
+  font-size: 24px;
+}
+.footer-links {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer-links:hover {
+  text-decoration: underline;
+}
+
+.footer-item-contact {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.last {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "."
+    "footer";
+}
+.last-item {
+  grid-area: footer;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
 .show {
   display: flex;
 }
@@ -232,7 +322,7 @@ button {
     width: 60%;
   }
   .top-input {
-    width: 95%;
+    width: 90%;
   }
   .top-title {
     font-size: 2.5em;
@@ -248,10 +338,18 @@ button {
     padding-right: 100px;
   }
   .top-input {
-    width: 80%;
+    width: 70%;
   }
   .top-title {
     font-size: 3em;
+  }
+  .bottom-content {
+    padding: 0 30px;
+  }
+  .bottom-content-inner {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -264,10 +362,23 @@ button {
     display: none;
   }
   .top-input {
-    width: 40%;
+    width: 50%;
   }
   .top-title {
-    font-size: 4.5em;
+    font-size: 3.5em;
+  }
+  footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 50px 15px 50px 15px;
+  }
+  .inner-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 110px;
+    margin-left: 150px;
   }
 }
 
