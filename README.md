@@ -1,6 +1,15 @@
-#myHelpCenterPage
-**This is just a clone project**
+# my-HelpCenterPage ( Cloning Design )
 
-my practice for responsive web design using _HTML, Pure CSS and Js_
+## Lessons Learned
 
-**Source:** https://www.frontendpractice.com/projects/abstract
+1. Analyzing and resarching the web desig chosen. Its layout, typography , color scheme and such more.
+2. Making a good HTML Structure for the website
+3. Implementing JS to become more interactivity for the user to use.
+
+## Live Preview
+
+https://coding-jhuunn.github.io/myHelpCenterPage/
+
+## Special Thanks To Abstract
+
+https://www.frontendpractice.com/projects/abstract
